@@ -1,40 +1,46 @@
 <?php
 
+//echo pentagonal(46303); die;
+
+//echo isPentagonal(5482660); die;
+
 $time = time();
 
-for ($i = 1; $i < 300; $i ++) {
+for ($i = 1; $i < 2000; $i ++) {
     $pentagon = pentagonal($i);
-    $sum = 0;
+    $candidates = array();
+
+    // f(n+k) - f(n) = k(6n + 3k -1)/2 = f(a)
+    // => n = ( 2f(a)/k + 1 - 3k ) / 6;
+    // n >= a => k <= a/2
     
-    $firstIndex = $i + 1;
-    $lastIndex = $firstIndex + 1;
-    while (true) {
-        $first = pentagonal($firstIndex);
-        $last = pentagonal($lastIndex);
-        
-        if ($last - $first === $pentagon) {
-            $sum = $last + $first;
-            break;
-        } else if ($last - $first < $pentagon) {
-            $lastIndex ++;
-        } else {
-            $firstIndex ++;
-            if ($firstIndex === $lastIndex) {
-                break;
+    // 2 f(a)
+    $fa2 = 2 * $pentagon;
+    for ($k = 1; $k < $i/2; $k++) {
+        if ($fa2 % $k === 0) {
+            $numerator = $fa2 / $k + 1 - 3 * $k;
+            if ($numerator % 6 === 0) {
+                $candidates[] = array ($numerator/6, $k);
             }
-            $lastIndex = $firstIndex + 1;
         }
-        
     }
     
-    if ($sum != 0) {
-        echo $sum . ' ' . $i . ' ' . $firstIndex . ' ' . $lastIndex . '<br/>';
-        if (isPentagonal($sum)) {
-            echo $i;
-            echo '<br/>Success';
+    foreach ($candidates as $pair) {
+//        echo $i . ' ' . $pair[0] . ' ' . ($pair[0] + $pair[1]) . '<br/>';
+        $first = pentagonal($pair[0]);
+        $last = pentagonal($pair[0] + $pair[1]);
+        if (isPentagonal($first + $last)) {
+            echo $pentagon . '<br/>';
+            echo "Success";
+            return;
+        }
+        if (isPentagonal($pentagon + $last)) {
+            echo $first . '<br/>';
+            echo "Success";
             return;
         }
     }
+
 }
 
 echo '<br/>';
@@ -46,6 +52,7 @@ function pentagonal ($n) {
 
 function isPentagonal ($number) {
     $base = ceil(sqrt(2 * $number/3));
+//    echo $base . ' ';
     return $number === intval(pentagonal($base));
 }
 /*
