@@ -1,4 +1,5 @@
 <?php
+a;
 
 $candidates = array();
 $numberLength = 3;
