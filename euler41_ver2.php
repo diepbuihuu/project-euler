@@ -63,7 +63,7 @@ function isPrime($number) {
         return false;
     }
     
-    for ($i = 3; $i <= $max; $i ++) {
+    for ($i = 3; $i <= $max; $i += 2) {
         if ($number % $i === 0) {
             return false;
         }
