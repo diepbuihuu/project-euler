@@ -19,9 +19,3 @@ for ($i = 9; $i >= 0; $i--) {
     echo $current[0];
     $initial = $initial % $bucket;
 }
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

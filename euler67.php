@@ -133,9 +133,3 @@ foreach ($data as $i => $line) {
 
 echo max($maxData[count($maxData) - 1]);
 
-//var_dump($data); die;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

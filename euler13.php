@@ -110,10 +110,3 @@ foreach ($data as $number) {
 }
 
 echo substr($sum, 0, 10);
-//var_dump($data); 
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

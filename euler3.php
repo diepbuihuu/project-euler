@@ -3,10 +3,6 @@
 $devidend = 600851475143;
 
 echo $devidend % 97;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 ?>
 
 <script type="text/javascript">

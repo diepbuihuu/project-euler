@@ -36,9 +36,3 @@ function isPentagonal ($number) {
     $base = ceil(sqrt(2 * $number/3));
     return $number === intval(pentagonal($base));
 }
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

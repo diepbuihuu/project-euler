@@ -61,10 +61,3 @@ for ($row = 0; $row < $size; $row++) {
     }
 }
 echo max($products);
-//var_dump($products);
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

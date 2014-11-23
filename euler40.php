@@ -22,8 +22,3 @@ for ($i = 0; $i <= 6; $i ++) {
 echo '<br/>';
 echo $result;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

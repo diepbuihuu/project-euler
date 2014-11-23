@@ -8,8 +8,4 @@ for ($i = 0; $i < strlen($sum); $i++) {
 }
 
 echo $result;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
+

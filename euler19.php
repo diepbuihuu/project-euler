@@ -62,9 +62,3 @@ function dayInMonth($mon, $year = 1900) {
             return 30;
     }
 }
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

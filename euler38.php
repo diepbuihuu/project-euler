@@ -70,9 +70,3 @@ function dubChar($charSet) {
 function pandigital($charSet) {
     return (count($charSet) === 9);
 }
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

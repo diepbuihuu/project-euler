@@ -35,9 +35,3 @@ echo $count1_999 . '<br/>';
 $count1000 = strlen('one') + strlen('thousand');
 
 echo $count1000 + $count1_999;
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

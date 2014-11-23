@@ -9,9 +9,3 @@ $phi = 1.61803398874989484820;
 $numOfDigit = 1000;
 
 echo round(($numOfDigit - 1 + log10(5)/2)/log10($phi));
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

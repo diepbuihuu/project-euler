@@ -7,8 +7,3 @@ for ($i = 1; $i <= 1000; $i++) {
 }
 
 echo substr($sum, -10);
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

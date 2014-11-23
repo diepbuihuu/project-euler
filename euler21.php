@@ -9,9 +9,3 @@ foreach ($numbers as $number) {
     $result += intval($number);
 }
 echo $result;
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

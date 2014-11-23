@@ -25,8 +25,3 @@ function fithPower($number) {
     return $result;
     
 }
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

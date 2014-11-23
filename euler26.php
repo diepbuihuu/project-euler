@@ -1,7 +1,5 @@
 <?php
 
-//echo getMaxPrime(1000);
-//echo cycle(997); die;
 
 $startTime = microtime(true);
 $maxCycle = 0;
@@ -65,9 +63,3 @@ function cycle($number) {
         }
     }
 }
-//echo cycle(6);
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

@@ -55,8 +55,3 @@ function isPentagonal ($number) {
 //    echo $base . ' ';
     return $number === intval(pentagonal($base));
 }
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

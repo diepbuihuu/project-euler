@@ -27,8 +27,3 @@ function lcm ($a, $b) {
     return $a * $b / gcd($a, $b);
 }
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

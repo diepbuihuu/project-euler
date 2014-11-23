@@ -17,9 +17,3 @@ for ($i = 10; $i <= 99; $i++) {
     }
     
 }
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

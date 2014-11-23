@@ -8,9 +8,3 @@ for ($i = 1; $i < $max; $i++) {
     }
 }
 echo $result;
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
